@@ -1,2 +1,12 @@
-@import "bootstrap-sprockets";
 @import "bootstrap";
+
+.navbar-dark {
+    background-color: #333A40;
+    a {
+        color: white;
+
+        &:hover {
+            color: #EEEEEE;
+        }
+    }
+}
