@@ -4,7 +4,7 @@ class Payment < ApplicationRecord
     validates :email, presence: true
     validates :token, presence: true
 
-    attr_accessor :card_number, :card_ccv, :card_expires_month, :card_expires_year
+    attr_accessor :card_number, :card_cvv, :card_expires_month, :card_expires_year
 
     def self.month_options
         Date::MONTHNAMES.compact.each_with_index.map { |name, index| ["#{index + 1} - #{name}", index + 1] }
